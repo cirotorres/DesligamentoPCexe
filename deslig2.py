@@ -1,5 +1,4 @@
 import tkinter as tk
-import threading
 import subprocess
 
 def desligar_em_15min():
@@ -75,8 +74,6 @@ root.title("Programa de Desligamento Automático")
 # Definindo o tamanho da janela (largura x altura + margem_esquerda + margem_superior)
 root.geometry("400x450+300+150")
 
-
-
 label_tempo = tk.Label(root, text="Digite o tempo de desligamento (minutos):")
 label_tempo.pack(pady=10)
 
@@ -105,5 +102,5 @@ btn_sair.pack(pady=10)
 cronometro_label = tk.Label(root, text="00:00", font=("Helvetica", 16))
 cronometro_label.pack(pady=10)
 
-# Iniciar a interface gráfica
+
 root.mainloop()
